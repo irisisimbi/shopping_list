@@ -1,4 +1,4 @@
-# Shopping List
+﻿# Shopping List
 
 My Flutter app: add items, mark them as bought, delete them, and much more.
 
@@ -13,26 +13,15 @@ My Flutter app: add items, mark them as bought, delete them, and much more.
 
 ## Screenshots
 
-### The list
 ![My list](screenshots/list.png)
 
-### An item bought
-![An item bought](screenshots/bought.png)
+![Screenshot 1](screenshots/screenshot1.png)
 
-### An empty item refused
-![An empty item refused](screenshots/empty.png)
+![Screenshot 2](screenshots/screenshot2.png)
 
-### Quantities
-![Quantities](screenshots/quantities.png)
+![Screenshot 3](screenshots/screenshot3.png)
 
-### Undo message
-![Undo message](screenshots/undo.png)
-
-### Bought filter
-![Bought filter](screenshots/bought-filter.png)
-
-### Item details
-![Item details](screenshots/details.png)
+![Screenshot 4](screenshots/screenshot4.png)
 
 ## Think
 
@@ -47,3 +36,4 @@ A hot reload keeps the objects already in memory. The existing `Item` objects we
 
 **4. The details screen changed the item, but the list only showed it after `setState` in `.then`. Why? What does this tell you about how Flutter decides when to redraw?**
 The details screen changed the data, but Flutter only redraws a screen when `build` runs again, and that happens when `setState` is called on that screen's own State. The list's State did not know anything had changed, so it kept showing the old picture. This tells me that Flutter does not watch my data: I have to tell it with `setState` whenever something the screen shows has changed.
+
